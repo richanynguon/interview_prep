@@ -3,7 +3,6 @@ colors = [
     'antiquewhite',
     'aqua',
     'aquamarine',
-    'azure',
     'beige',
     'bisque',
     'black',
@@ -29,9 +28,6 @@ colors = [
     'darkred',
     'darksalmon',
     'darkseagreen',
-    'darkslateblue'
-    'darkslategray'
-    'darkturquoise'
     'darkviolet',
     'deeppink',
     'deepskyblue',
@@ -52,7 +48,6 @@ colors = [
     'hotpink',
     'indianred',
     'indigo',
-    'ivory',
     'khaki',
     'lavender',
     'lavenderblush'
@@ -86,7 +81,6 @@ colors = [
     'orangered',
     'orchid',
     'palegreen',
-    'papayawhip',
     'peachpuff',
     'peru',
     'pink',
@@ -116,7 +110,6 @@ colors = [
     'turquoise',
     'violet',
     'wheat',
-    'white',
     'whitesmoke',
     'yellow',
     'yellowgreen',

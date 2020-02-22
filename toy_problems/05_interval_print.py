@@ -4,10 +4,13 @@ For each multipleof five print multiple of five
 '''
 from performance_tester import performance_tester
 
+#o(n)
 def interval_print(n):
-    results=[]
+    results = []
     for i in range(n):
-        if (i+1) % 3 == 0:
+        if (i+1) % 3 == 0 and (i+1) % 5 == 0:
+            results.append("Multiple of Three and Five")
+        elif (i+1) % 3 == 0:
             results.append("Multiple of Three")
         elif (i+1) % 5 == 0:
             results.append("Multiple of Five")
@@ -16,4 +19,4 @@ def interval_print(n):
     return results
 
 
-performance_tester([interval_print],[10,52,325])
+performance_tester([interval_print], [10, 52, 325])

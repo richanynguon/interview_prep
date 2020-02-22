@@ -1,6 +1,6 @@
 from performance_tester import performance_tester
 
-
+#o(n)
 def max_char(word):
     count = {}
     highest_value = ""
@@ -16,7 +16,7 @@ def max_char(word):
                 highest_value = char
     return highest_value
 
-
+#o(n) - slightly faster
 def max_char_second(word):
     return max(word, key=word.count)
 
