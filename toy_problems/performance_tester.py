@@ -21,7 +21,7 @@ def performance_tester(funcs, inputs, n=100000):
                 total_duration += duration
             average_duration = total_duration/n
             performance.append(average_duration*10000)
-            if type(input) != list and type(input) != dict:
+            if type(input) is not list and type(input) is not dict:
                 if type(input) == str:
                     input_length.append(len(input))
                 else:
@@ -30,12 +30,14 @@ def performance_tester(funcs, inputs, n=100000):
                 input_length.append(len(input))
         total_performance.append({func.__name__: performance})
         plt.plot(input_length, performance, color=color,
-                 linewidth=5, label=function_name)
+                 linewidth=3, label=function_name)
         print("debugging reasons",color)
     plt.ylabel('Seconds')
-    if type(input) != list and type(input) != dict:
-        plt.xlabel(
-            'Dyanmic Input Units - Numbers will show - Words will show by how many characters')
+    if type(input) is not list and type(input) is not dict:
+        if type(input) is str:
+            plt.xlabel("String Length")
+        else:
+            plt.xlabel("Input Value")
     else:
         plt.xlabel('Amount of Elements')
     plt.ylim([0, 1])
