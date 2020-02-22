@@ -28,4 +28,4 @@ def reverse_extended_append(arr):
 
 
 print(performance_tester([reverse, reverse_extended, reverse_extended_append], [
-      sample1, sample2, sample3, sample4, sample5], 100000))
+      sample1, sample2, sample3, sample4, sample5], ylim=False))

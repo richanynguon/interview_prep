@@ -22,4 +22,4 @@ def max_char_second(word):
 
 
 performance_tester([max_char, max_char_second], ["ifeel", "firewhenthe", "imstilltryingtofigureout",
-                                "starringataccrosstheroombetimatrendsettertoowoahhohoh"])
+                                "starringataccrosstheroombetimatrendsettertoowoahhohoh"], ylim=False)

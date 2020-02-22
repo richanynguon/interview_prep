@@ -20,4 +20,4 @@ def reverse_int_second(num):
 
 
 performance_tester([reverse_int, reverse_int_second],
-                   [-121, 1111, 32135, 123543, ], 100000, False)
+                   [-121, 1111, 32135, 123543,984635658564665549 ], ylim=False)

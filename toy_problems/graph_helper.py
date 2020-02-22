@@ -50,7 +50,6 @@ colors = [
     'indigo',
     'khaki',
     'lavender',
-    'lavenderblush'
     'lawngreen',
     'lemonchiffon',
     'lightblue',
@@ -100,7 +99,6 @@ colors = [
     'skyblue',
     'slateblue',
     'slategray',
-    'snow',
     'springgreen',
     'steelblue',
     'tan',

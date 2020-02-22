@@ -4,7 +4,7 @@ import random
 from graph_helper import colors
 
 
-def performance_tester(funcs, inputs, n=100000, ylim=True, multiple_inputs=False):
+def performance_tester(funcs, inputs, n=500000, ylim=True, multiple_inputs=False):
     total_performance = []
     for func in funcs:
         input_length = []
@@ -14,10 +14,9 @@ def performance_tester(funcs, inputs, n=100000, ylim=True, multiple_inputs=False
         for input in inputs:
             if multiple_inputs:
                 total_duration = 0
-                *other, = input
                 for i in range(n):
                     start = time.time()
-                    func(*other)
+                    func(*input)
                     end = time.time()
                     duration = end - start
                     total_duration += duration
@@ -54,7 +53,6 @@ def performance_tester(funcs, inputs, n=100000, ylim=True, multiple_inputs=False
         plt.plot(input_length, performance, color=color,
                  linewidth=3, label=function_name)
         print("debugging reasons", color)
-    plt.ylabel('Seconds')
     if type(input) is not list and type(input) is not dict:
         if type(input) is str:
             plt.xlabel("String Length")
@@ -64,6 +62,8 @@ def performance_tester(funcs, inputs, n=100000, ylim=True, multiple_inputs=False
         plt.xlabel('Amount of Elements')
     if ylim:
         plt.ylim([0, 1])
+    plt.ylabel('Seconds')
     plt.legend()
+    print(total_performance)
     plt.show()
-    return total_performance
+    return "Done"
